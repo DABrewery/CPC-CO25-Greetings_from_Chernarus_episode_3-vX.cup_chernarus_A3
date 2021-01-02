@@ -33,7 +33,7 @@ _vehHeading = 230;
 
 //On spawn le groupe d'infanterie, le véhicule et son équipage, puis on charge le groupe d'infanterie dans le véhicule 
 _grpInf = [[0,0,0], _side, _grpInfMeca] call GDC_fnc_lucySpawnGroupInf; 
-_tbVeh = [getMarkerPos (_tbWP#0), _vehHeading, _clsVeh, _side] call BIS_fnc_spawnVehicle; 
+_tbVeh = [getMarkerPos (_tbWP#0), _vehHeading, _clsVeh, _grpInf] call BIS_fnc_spawnVehicle; 
 {_x moveInCargo (_tbVeh#0)} forEach units _grpInf; 
 
 //On déplace le groupe sur le marqeur d'unload, on unload les fantassins dans une zone claire d'ENI (thanks to Morbakos). 

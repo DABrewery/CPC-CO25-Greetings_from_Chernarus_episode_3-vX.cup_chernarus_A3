@@ -14,7 +14,7 @@
 
 gdc_plutoDebug = false;
 
-//Get number of players to allow dynamic hostile units number adaptation
+//On adapte le nombre d'hostiles par rapport au nombre de joueurs
 nbJoueurs = playersNumber east;
 
 /* Groups definition */
@@ -63,3 +63,6 @@ execVM "spawn_IA\spawnCamp_1.sqf";
 execVM "spawn_IA\spawnCamp_2.sqf";
 execVM "spawn_IA\spawnCamp_3.sqf";
 execVM "spawn_IA\spawnCamp_4.sqf";
+
+// Set the computer as not hacked 
+computerToHack setVariable ["challengeSuccessfull", false, true];

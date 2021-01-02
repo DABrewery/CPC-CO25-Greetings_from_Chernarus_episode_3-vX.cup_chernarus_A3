@@ -1,31 +1,27 @@
 ﻿// Affichage durant l'écran de choix de mission
-
-// Image pour l'écran de sélection
+// - Image pour l'écran de sélection
 /*
 overViewPicture       = "loadScreen.jpg";
 overViewPictureLocked = "loadScreen.jpg";
 */
-
 // - Texte de description
-overviewText = "Texte de description pour l'écran de choix de mission";
-overviewTextLocked = "Sous-texte de description pour l'écran de choix de mission";
-
+overviewText = "нато воняет (l'OTAN, ça pue...)";
+overviewTextLocked = "Мы дадим им второй засранец (...et on va leur faire un deuxième trou du cul.)";
 // - Author
 author = "tanin69"; 
-
 // - Type de mission (informatif)
 class Header
 {
 	gameType = Coop; // MP mission type
-	minPlayers = NN;
-	maxPlayers = NN;
+	minPlayers = 15;
+	maxPlayers = 25;
 };
 
 // Affichage durant l'écran de chargement
 // - Nom de la mission
-onLoadName = "Texte de mission pour image de chargement"; 
+onLoadName = "нато воняет (l'OTAN, ça pue...)"; 
 // - Texte de description
-onLoadMission = "Sous-texte de mission pour image de chargement";
+onLoadMission = "Мы дадим им второй засранец (...et on va leur faire un deuxième trou du cul.)";
 // - Image
 loadScreen = "";
 
@@ -33,7 +29,7 @@ loadScreen = "";
 enableDebugConsole = 1;
 saving = 0;
 
-// Scripts disponibles pour la mission
+// Fonctions
 #include "CfgFunctions.hpp"
 
 // Débriefing
