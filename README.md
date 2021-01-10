@@ -1,4 +1,6 @@
-# a3_mission_template
-tanin69's default mission template for Arma 3 video game
+# TODO
 
-Please, see the wiki to read what has been documented so far
+Vérifier le loadout
+
+Ajouter le dépôt de munitions
+

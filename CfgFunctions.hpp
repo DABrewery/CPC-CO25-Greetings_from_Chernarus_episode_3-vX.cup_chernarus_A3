@@ -21,6 +21,7 @@ class CfgFunctions
 
 		class logistic
 		{
+			file="functions\logistic";
 			class cargoVehicle {};
 			class refuelTank {};
 		};
@@ -30,6 +31,7 @@ class CfgFunctions
 			file="functions\misc";
 			class probaChallenge {};
 			class findClearZoneInArea {};
+			class searchLight {};
 		};
 
 	}
