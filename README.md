@@ -1,6 +1,10 @@
 # TODO
 
-Vérifier le loadout
+Tests sur dédié :
+- Hacking
+- Renforts
 
-Ajouter le dépôt de munitions
+Vérifier les loadout
+
+
 

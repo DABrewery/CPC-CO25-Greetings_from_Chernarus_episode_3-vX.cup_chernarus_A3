@@ -1,0 +1,8 @@
+{
+    "sqflint.checkPaths": true,
+    "sqflint.ignoredVariables": [
+        "computerToHack",
+        "reinf1",
+        "reinf2"
+    ]
+}
