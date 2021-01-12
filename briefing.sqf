@@ -56,7 +56,7 @@ On pense que la cellule de renseignement se trouve soit dans <marker name='marke
 Patrouilles éparses à proximité immédiate de la base. Aucune patrouille dans la ville ou dans les environs.<br/><br/>
 
 <font color='#ff0505'>Renforts</font color><br/>
-La cavalerie US se portera sûrement au secours de l'armée chernarusse. Etant basée à Chernogorsk, on pense qu'elle mettra entre 20 et 30 minutes pour arriver sur zone une fois l'alerte déclenchée.
+La cavalerie US se portera sûrement au secours de l'armée chernarusse. Etant basée à Chernogorsk, on pense qu'elle mettra entre 30 et 40 minutes pour arriver sur zone une fois l'alerte déclenchée.
 "]];
 
 player createDiaryRecord ["Diary", ["Mission", "
