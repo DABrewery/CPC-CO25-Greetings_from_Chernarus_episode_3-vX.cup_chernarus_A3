@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=226;
+		nextID=240;
 	};
 	class Camera
 	{
-		pos[]={2454.4189,205.69386,5462.2227};
-		dir[]={0.086849846,-0.58221585,-0.80851036};
-		up[]={0.062191304,0.81297934,-0.57896155};
-		aside[]={-0.99437338,1.99856e-007,-0.1068171};
+		pos[]={2430.9854,225.67795,5486.4854};
+		dir[]={0.19564509,-0.55616814,-0.80785555};
+		up[]={0.13092403,0.83101785,-0.54061234};
+		aside[]={-0.97200435,-1.937151e-007,-0.23540018};
 	};
 };
 binarizationWanted=0;
@@ -450,7 +450,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category1
+	class Category0
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -505,7 +505,7 @@ class CustomAttributes
 		};
 		nAttributes=1;
 	};
-	class Category2
+	class Category1
 	{
 		name="Scenario";
 		class Attribute0
@@ -841,10 +841,10 @@ class Mission
 		forecastLightnings=0.1;
 		wavesForced=1;
 		windForced=1;
-		year=2020;
-		month=3;
-		day=8;
-		hour=12;
+		year=2017;
+		month=7;
+		day=5;
+		hour=18;
 		minute=0;
 		startFogBase=250;
 		forecastFogBase=250;
