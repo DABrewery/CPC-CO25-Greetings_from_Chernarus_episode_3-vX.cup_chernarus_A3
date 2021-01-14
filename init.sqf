@@ -73,8 +73,8 @@ _action_acces = [
 							<t size='1.3' color='#acf1ec'> %1</t><br /><br />
 							<t size='1.2'>Bravo grid position is </t><br />
 							<t size='1.3' color='#acf1ec'> %2</t><br /><br />",
-							mapGridPosition leader reinf1,
-							mapGridPosition leader reinf2
+							mapGridPosition leader (reinf1#0),
+							mapGridPosition leader (reinf2#0)
 						];
 					} else {
 						hintSilent parseText format [ 
@@ -84,7 +84,7 @@ _action_acces = [
 							<t size='1.2'>Alpha grid position is </t><br />
 							<t size='1.3' color='#acf1ec'> %1</t><br /><br />
 							<t size='1.2'>Bravo is being prepared</t><br /><br />",
-							mapGridPosition leader reinf1
+							mapGridPosition leader (reinf1#0)
 						];
 					};
 				} else {

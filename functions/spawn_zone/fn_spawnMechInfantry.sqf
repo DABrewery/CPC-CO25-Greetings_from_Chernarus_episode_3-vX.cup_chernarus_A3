@@ -13,6 +13,10 @@ Parameters :
 3: STRING : vehicle classname (optionnal)
 4: NUMBER : vehicle heading at spawn point (optionnal)
 
+Returns :
+ARRAY#0 : group
+ARRAY#1 : vehicle
+
 */
 
 params [
@@ -58,4 +62,6 @@ _wpDest setWaypointType "SAD";
 	{
 		deleteWaypoint [_group, _i];
 	};
-}]
+}];
+
+[_grpInf,_tbVeh#0]

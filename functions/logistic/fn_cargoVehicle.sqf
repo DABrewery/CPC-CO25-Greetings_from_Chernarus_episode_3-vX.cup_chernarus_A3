@@ -17,7 +17,7 @@ switch (_cargo) do {
 	//Cargo des bradley
 		case "cargo_ifv_aplha": {
 		_veh addBackpackCargoGlobal ["B_Carryall_khk",3];
-		_veh addItemCargoGlobal ["Toolbox", 2];
+		_veh addItemCargoGlobal ["Toolkit", 2];
 		_veh addItemCargoGlobal ["B_AssaultPack_cbr", 2];
 		_veh addMagazineCargoGlobal ["rhsusf_100Rnd_762x51_m61_ap", 10];
 		_veh addMagazineCargoGlobal ["rhsusf_100Rnd_556x45_mixed_soft_pouch", 20];
@@ -34,7 +34,7 @@ switch (_cargo) do {
 	};
 	case "cargo_ifv": {
 		_veh addBackpackCargoGlobal ["B_Carryall_khk",3];
-		_veh addItemCargoGlobal ["Toolbox", 2];
+		_veh addItemCargoGlobal ["Toolkit", 2];
 		_veh addItemCargoGlobal ["B_AssaultPack_cbr", 2];
 		_veh addMagazineCargoGlobal ["rhsusf_100Rnd_762x51_m61_ap", 10];
 		_veh addMagazineCargoGlobal ["rhsusf_100Rnd_556x45_mixed_soft_pouch", 20];

@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=240;
+		nextID=324;
 	};
 	class Camera
 	{
-		pos[]={2430.9854,225.67795,5486.4854};
-		dir[]={0.19564509,-0.55616814,-0.80785555};
-		up[]={0.13092403,0.83101785,-0.54061234};
-		aside[]={-0.97200435,-1.937151e-007,-0.23540018};
+		pos[]={2558.0303,196.57272,5140.1772};
+		dir[]={-0.49132442,-0.51772523,0.70042402};
+		up[]={-0.29734787,0.85550785,0.42389262};
+		aside[]={0.81867987,3.2132084e-007,0.57427764};
 	};
 };
 binarizationWanted=0;
@@ -591,7 +591,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=2;
+									items=5;
 									class Item0
 									{
 										class data
@@ -620,6 +620,48 @@ class CustomAttributes
 											value="ace_cookoff_probabilitycoef";
 										};
 									};
+									class Item2
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_cookoff_enableammobox";
+										};
+									};
+									class Item3
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_cookoff_enableammocookoff";
+										};
+									};
+									class Item4
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_cookoff_enable";
+										};
+									};
 								};
 							};
 						};
@@ -636,7 +678,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=2;
+									items=5;
 									class Item0
 									{
 										class data
@@ -662,7 +704,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=0.52190959;
+														value=0.22597942;
 													};
 												};
 												class Item1
@@ -708,6 +750,141 @@ class CustomAttributes
 															};
 														};
 														value=5;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item2
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item3
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item4
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=2;
 													};
 												};
 												class Item1
@@ -3542,7 +3719,7 @@ class Mission
 			{
 				name="trgRedDetected";
 				condition="call{this}";
-				onActivation="call{[] spawn {" \n "" \n "_t0 = time + 1200 + random 600;" \n "" \n "while {(time < _t0) && !(computerToHack getVariable ""challengeSuccessfull"")} do {sleep 10};" \n " " \n "reinf1 = [[""mrkSpawn_Mecha_1"",""mrkUnload_Mecha_1"",""mrkSAD_Mecha_1""]," \n " blufor," \n "GROUPE_BLUFOR_PETIT_US," \n " ""RHS_M2A2_wd""" \n "] call int_fnc_spawnMechInfantry;" \n "" \n "sleep random 300 + 300;" \n "" \n "reinf2 = [[""mrkSpawn_Mecha_1"",""mrkUnload_Mecha_1"",""mrkSAD_Mecha_1""]," \n " blufor," \n "GROUPE_BLUFOR_PETIT_US," \n " ""RHS_M2A2_wd""" \n "] call int_fnc_spawnMechInfantry;" \n "};}";
+				onActivation="call{[] spawn { " \n " " \n "_t0 = time + 1200 + random 600; " \n " " \n "while {(time < _t0) && !(computerToHack getVariable ""challengeSuccessfull"")} do {sleep 10}; " \n "  " \n "reinf1 = [[""mrkSpawn_Mecha_1"",""mrkUnload_Mecha_1"",""mrkSAD_Mecha_1""], " \n " blufor, " \n "GROUPE_BLUFOR_PETIT_US, " \n " ""RHS_M2A2_wd"" " \n "] call int_fnc_spawnMechInfantry; " \n "PublicVariable ""reinf1""; " \n " " \n "sleep random 300 + 300; " \n " " \n "reinf2 = [[""mrkSpawn_Mecha_1"",""mrkUnload_Mecha_1"",""mrkSAD_Mecha_1""], " \n " blufor, " \n "GROUPE_BLUFOR_PETIT_US, " \n " ""RHS_M2A2_wd"" " \n "] call int_fnc_spawnMechInfantry; " \n "}; " \n "PublicVariable ""reinf2"";}";
 				sizeA=250;
 				sizeB=250;
 				activationType="WEST D";
@@ -9219,19 +9396,8 @@ class Mission
 			name="munitions";
 			class Entities
 			{
-				items=2;
+				items=1;
 				class Item0
-				{
-					dataType="Marker";
-					position[]={2530.0623,192.90186,5147.1934};
-					name="marker_depotmun";
-					text="Dépôt de munitions";
-					type="mil_box";
-					colorName="ColorRed";
-					id=752;
-					atlOffset=0.21437073;
-				};
-				class Item1
 				{
 					dataType="Layer";
 					name="Build_1";
@@ -9526,17 +9692,19 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={2528.8284,193.93611,5137.6636};
+										position[]={2528.8279,193.93593,5137.6641};
 										angles[]={0,1.0485065,0};
 									};
 									side="Empty";
 									flags=4;
 									class Attributes
 									{
+										health=0.052667059;
 										name="magCrate_1";
 									};
 									id=748;
 									type="rhs_weapon_crate";
+									atlOffset=0.22799683;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -9566,17 +9734,19 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={2528.7688,193.99184,5140.0825};
+										position[]={2528.769,193.99165,5140.083};
 										angles[]={0,5.7771792,0};
 									};
 									side="Empty";
 									flags=4;
 									class Attributes
 									{
+										health=0.052667059;
 										name="launcherCrate_1";
 									};
 									id=749;
 									type="CUP_RUSpecialWeaponsBox";
+									atlOffset=0.22799683;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -9606,8 +9776,8 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={2554.814,195.11829,5143.6636};
-										angles[]={0,1.0333979,0};
+										position[]={2554.814,195.1185,5143.6641};
+										angles[]={0,1.033392,0};
 									};
 									side="Empty";
 									flags=4;
@@ -9618,7 +9788,7 @@ class Mission
 									};
 									id=750;
 									type="CUP_RUVehicleBox";
-									atlOffset=0.13677979;
+									atlOffset=0.00019836426;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -9648,29 +9818,30 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={2531.1077,193.94891,5137.6475};
+										position[]={2531.1079,193.94926,5137.647};
 										angles[]={0,4.6933651,0};
 									};
 									side="Empty";
 									flags=4;
 									class Attributes
 									{
+										health=0.047040328;
 									};
 									id=751;
 									type="CUP_RUOrdnanceBox";
-									atlOffset=0.19764709;
+									atlOffset=0.19799805;
 								};
 							};
 							id=738;
-							atlOffset=0.20088196;
+							atlOffset=0.20108032;
 						};
 					};
 					id=737;
-					atlOffset=0.20088196;
+					atlOffset=0.20108032;
 				};
 			};
 			id=753;
-			atlOffset=-0.088699341;
+			atlOffset=0.20108032;
 		};
 		class Item24
 		{
