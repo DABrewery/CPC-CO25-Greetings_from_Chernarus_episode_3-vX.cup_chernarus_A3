@@ -8,7 +8,7 @@ class EditorData
 	toggles=1025;
 	class ItemIDProvider
 	{
-		nextID=777;
+		nextID=779;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={2545.907,218.33934,5087.3188};
-		dir[]={0.86358452,-0.35590956,-0.35715693};
-		up[]={0.32889503,0.93451977,-0.13602304};
-		aside[]={-0.3821826,1.2747478e-008,-0.92409319};
+		pos[]={2438.7009,216.65901,5479.1514};
+		dir[]={0.33953938,-0.60283214,-0.72203201};
+		up[]={0.25653905,0.79786116,-0.54553199};
+		aside[]={-0.90494275,1.9263825e-007,-0.42555544};
 	};
 };
 binarizationWanted=0;
@@ -451,7 +451,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category0
+	class Category1
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -506,7 +506,7 @@ class CustomAttributes
 		};
 		nAttributes=1;
 	};
-	class Category1
+	class Category2
 	{
 		name="Scenario";
 		class Attribute0
@@ -3165,21 +3165,21 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2578.177,202.10274,5082.0869};
-						angles[]={0,5.7395282,0};
+						position[]={2578.177,202.18686,5082.0869};
+						angles[]={0,2.4464495,0};
 					};
 					side="Empty";
 					class Attributes
 					{
 						name="computerToHack";
 					};
-					id=776;
-					type="Land_Laptop_unfolded_F";
-					atlOffset=1.0632629;
+					id=777;
+					type="Item_Laptop_Unfolded";
+					atlOffset=1.0358124;
 				};
 			};
 			id=513;
-			atlOffset=6.9951935;
+			atlOffset=6.1943207;
 		};
 		class Item2
 		{
@@ -4175,7 +4175,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2443.2014,203.30026,5465.7109};
+						position[]={2446.2339,204.03488,5469.2524};
 					};
 					side="East";
 					flags=7;
@@ -4298,7 +4298,6 @@ class Mission
 					};
 					id=699;
 					type="rhs_vdv_flora_officer_armored";
-					atlOffset=1.5258789e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5070,7 +5069,6 @@ class Mission
 			{
 			};
 			id=698;
-			atlOffset=1.5258789e-005;
 		};
 		class Item16
 		{
